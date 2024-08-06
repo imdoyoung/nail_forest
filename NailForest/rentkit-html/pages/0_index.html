@@ -42,7 +42,7 @@
         <div class="row">
           <div class="col-md-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="../pages/0_real-estate.html"> <img src="../assets/images/logo.svg"
+              <a class="navbar-brand" href="../pages/0_index.html"> <img src="../assets/images/logo.svg"
                   alt="Rentkit Directory & Listing Bootstrap 5 Theme"></a>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -59,10 +59,10 @@
                       Home
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../index.html">Classic</a></li>
+                      <li><a class="dropdown-item" href="../pages/0_index.html">Classic</a></li>
                       <li><a class="dropdown-item" href="../pages/modern.html">Modern</a></li>
                       <li><a class="dropdown-item" href="../pages/hotel-finder.html">Hotel</a></li>
-                      <li><a class="dropdown-item" href="../pages/real-estate.html">Real Estate <span
+                      <li><a class="dropdown-item" href="../pages/0_index.html">Real Estate <span
                             class="badge bg-primary">New</span></a></li>
                     </ul>
                   </li>
@@ -200,7 +200,7 @@
                     <a class="nav-link" href="../pages/dashboard/overview.html">Dashboard</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../docs/index.html">Docs</a>
+                    <a class="nav-link" href="../pages/0_index.html">Docs</a>
                   </li>
                 </ul>
                 <a href="../pages/add-listing.html" class="btn btn-primary d-none d-lg-block">List Your Space</a>
@@ -252,74 +252,39 @@
 
               <div class="mb-4" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-light-primary text-primary btn-sm rounded-pill px-3"
-                  for="btnradio1">Buy</label>
-
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-light-primary text-primary btn-sm rounded-pill px-3" for="btnradio2">
-                  Rent</label>
-
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-light-primary text-primary btn-sm rounded-pill px-3" for="btnradio3">
-                  Sell</label>
-
+                <label class="btn btn-outline-light-primary text-primary btn-sm rounded-pill px-3" for="btnradio1">Book Now</label>
               </div>
 
               <!-- form -->
-              <div class="card border-0 p-2 search-form rounded-md-pill smooth-shadow-md  ">
-
+              <div class="card border-0 p-2 search-form rounded-md-pill smooth-shadow-md">
                 <div class="row align-items-center">
                   <div class="col-sm">
                     <div class="form-floating">
-                      <select
-                        class="form-select border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent"
-                        id="floatingSelect" aria-label="Floating label select example">
-                        <option>New Delhi</option>
-                        <option value="Ahmedabad">Ahmedabad</option>
-                        <option value="Surat">Surat</option>
-                        <option value="Rajkot">Rajkot</option>
-                        <option value="Udaipur">Udaipur</option>
-                        <option value="Daman">Daman</option>
-                        <option value="Pune">Pune</option>
-                        <option value="Jaipur">Jaipur</option>
+                      <select class="select2">
+                        <option>지역 선택</option>
+                        <option value="Gangnam">강남구</option>
+                        <option value="Gwangjin">광진구</option>
+                        <option value="Guro">구로구</option>
+                        <option value="Nowon">노원구</option>
+                        <option value="Dobong">도봉구</option>
+                        <option value="DDM">동대문구</option>
+                        <option value="Mapo">마포구</option>
+                        <option value="Songpa">송파구</option>
+                        <option value="Yongsan">용산구</option>
                       </select>
-                      <label for="floatingSelect">Location</label>
                     </div>
-
-
+                  </div>
+                  <div class="col-sm form-group border-start-md border-end-md">
+                    <input type="text" id="dateSelect" class="form-control border-0"
+                      placeholder="날짜 선택">
                   </div>
                   <div class="col-sm">
-                    <div class="form-floating">
-                      <select
-                        class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent"
-                        id="floatingSelect" aria-label="Floating label select example">
-                        <option>Duplex</option>
-                        <option value="House">House</option>
-                        <option value="Flat">Flat</option>
-                        <option value="Guest house">Guest house</option>
-                        <option value="Hotel">Hotel</option>
-
-                      </select>
-                      <label for="floatingSelect">Property Type</label>
-                    </div>
-
-
-                  </div>
-                  <div class="col-sm">
-                    <div class="form-floating">
-                      <select class="form-select border-0 form-focus-none" id="floatingSelect"
-                        aria-label="Floating label select example">
-                        <option>$3,000</option>
-                        <option value="$6,900">$6,900</option>
-                        <option value="$9,500">$9,500</option>
-                        <option value="$2,000">$2,000</option>
-                        <option value="$1,000">$1,000</option>
-
-                      </select>
-                      <label for="floatingSelect">Max price</label>
-                    </div>
-
-
+                    <select class="select2">
+                      <option>인원</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
                   </div>
 
 
