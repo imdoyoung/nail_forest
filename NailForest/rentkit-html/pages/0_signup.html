@@ -49,46 +49,50 @@
               <h1 class="mb-4">SIGN UP</h1>
               <!-- form -->
               <form>
+                <!-- name -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                </div>
                 <!-- id -->
                 <div class="mb-3">
-                  <label fot="id" class="form-label">Id</label>
+                  <label fot="id" class="form-label">Id<span class="text-danger">*</span></label>
                   <input type="text" class="form-control" id="id" placeholder="Enter id" required>
                 </div>
                 <!-- password -->
                 <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
+                  <label for="password" class="form-label">Password<span class="text-danger">*</span></label>
                   <input type="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
                 <!-- confirm password -->
                 <div class="mb-3">
-                  <label for="confirm-password" class="form-label">Confirm Password</label>
+                  <label for="confirm-password" class="form-label">Confirm Password<span class="text-danger">*</span></label>
                   <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
-                </div>
-                <!-- name -->
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter name" required>
                 </div>
                 <!-- gender -->
                 <div class="mb-3">
-                  <label for="gender" class="form-label">Gender</label><br>
-                  <input type="radio" id="gender" name="gender" value="female" checked>여성
-                  <input type="radio" id="gender" name="gender" value="male">남성
+                  <label for="gender" class="form-label">Gender<span class="text-danger">*</span></label>
+                  <select class="select2" id="gender">
+                    <option>Gender</option>
+                    <option>여성</option>
+                    <option>남성</option>
+                  </select>
                 </div>
                 <!-- birth -->
                 <div class="mb-3">
                   <label for="birth" class="form-label">Birth</label>
-                  <input type="date" class="form-control" id="birth">
+                  <!-- <input type="text" id="dateSelect" class="form-control" placeholder="Birth"> -->
+                  <input type="date" id="dateSelect" class="form-control" placeholder="Birth">
                 </div>
                 <!-- email -->
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <label for="email" class="form-label">Email address<span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
                 <!-- phone -->
                 <div class="mb-3">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" >
+                  <label for="phone" class="form-label">Phone<span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
                 </div>
                 <!-- text -->
                 <div class="mb-2">

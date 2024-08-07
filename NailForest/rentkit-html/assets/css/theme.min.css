@@ -40327,7 +40327,8 @@ h2 {
 
     .h2,
     h2 {
-        font-size: 1.75rem
+        /*font-size: 1.75rem*/
+        font-size: 30px;
     }
 }
 
@@ -40739,14 +40740,16 @@ progress {
 }
 
 .display-5 {
-    font-size: calc(1.425rem + 2.1vw);
+    /*font-size: calc(1.425rem + 2.1vw);*/
+    font-size: 40px;
     font-weight: 300;
     line-height: 1.2
 }
 
 @media (min-width:1200px) {
     .display-5 {
-        font-size: 3rem
+        /*font-size: 3rem*/
+        font-size: 40px;
     }
 }
 
