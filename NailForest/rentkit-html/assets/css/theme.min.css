@@ -73066,3 +73066,79 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background-color:transparent;
     border-color: transparent;
 }
+
+/* shop_detail 페이지 메뉴 checkbox CSS start */
+/* 기본 스타일 */
+.custom-checkbox {
+    color: #6c757d;
+    background-color: #fff;
+    border: 2px solid #13653f;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px; /* 선택 사항: 모서리 둥글게 하기 */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+    box-sizing: border-box; /* padding과 border를 포함하여 전체 크기를 계산합니다 */
+}
+
+.content{
+    padding: 10px;
+    border-radius: 4px; /* 선택 사항: 모서리 둥글게 하기 */
+}
+
+/* 체크박스 숨기기 */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* 체크박스가 선택된 상태와 마우스 오버 상태에서 label 전체 스타일 변경 */
+.custom-checkbox:hover,
+.custom-checkbox input[type="checkbox"]:checked {
+    color: #000;
+    background-color: #EFF6F4; /* 배경색을 label에 직접 적용 */
+    border-color: #13653f;
+    border: 2px solid #13653f;
+}
+
+/* 체크박스가 선택된 상태에서 .content 요소 스타일 */
+.custom-checkbox input[type="checkbox"]:checked ~ .content {
+    color: #000;
+    background-color: #EFF6F4; /* 배경색을 label에 직접 적용 */
+    border-color: #13653f;
+    font-weight: bolder;
+}
+
+/* p 태그 스타일 - 내용 왼쪽 정렬 */
+.custom-checkbox .align-left {
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 가격과 버튼 그룹을 같은 라인에 배치 */
+.custom-checkbox .price-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0; /* 불필요한 여백 제거 */
+}
+
+/* 가격 스타일 */
+.custom-checkbox .price {
+    text-align: left;
+    display: inline-block;
+    margin-right: auto;
+}
+
+/* 수량 조절 버튼 */
+.custom-checkbox .btn-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0; /* 버튼 아래 불필요한 여백 제거 */
+}
+
+
+/* shop_detail 페이지 메뉴 checkbox CSS end */
