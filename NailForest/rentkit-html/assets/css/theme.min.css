@@ -73140,5 +73140,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
     margin-bottom: 0; /* 버튼 아래 불필요한 여백 제거 */
 }
 
-
 /* shop_detail 페이지 메뉴 checkbox CSS end */
+
+/* shop_list 페이지 슬라이더 가격 글씨 크기 조절 start */
+/* .noUi-tooltip {
+    font-size: 16px;
+} */
+/* shop_list 페이지 슬라이더 가격 글씨 크기 조절 end */
